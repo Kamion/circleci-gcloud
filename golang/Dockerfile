@@ -10,5 +10,3 @@ RUN /usr/local/gcloud/google-cloud-sdk/install.sh
 ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
 
 RUN gcloud components install kubectl
-RUN sudo groupadd docker
-RUN sudo usermod -aG docker circleci
