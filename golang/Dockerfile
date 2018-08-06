@@ -2,10 +2,9 @@ FROM circleci/golang
 
 LABEL maintainer="Kamion Development team <hello@kamion.io>"
 
-RUN apt-get install software-properties-common && \
-    sudo apt-add-repository ppa:ansible/ansible && \
-    apt-get update && \
-    apt-get install ansible
+RUN sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367 && \
+    sudo apt-get update && \
+    sudo apt-get install ansible
 
 RUN sudo chown -R circleci /usr/local/
 RUN curl https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz > /tmp/google-cloud-sdk.tar.gz
