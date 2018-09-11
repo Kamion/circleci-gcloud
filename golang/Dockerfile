@@ -1,4 +1,4 @@
-FROM circleci/golang
+FROM circleci/golang:1.11-stretch
 
 LABEL maintainer="Kamion Development team <hello@kamion.io>"
 
