@@ -1,4 +1,4 @@
-FROM cimg/node:15.9.0
+FROM cimg/node:14.17.0
 
 LABEL maintainer="Kamion Development team <hello@kamion.io>"
 
